@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/globalSoluction-0.0.1-SNAPSHOT.jar
+web: ./mvnw clean package -DskipTests && java -Dserver.port=$PORT -jar target/globalSoluction-0.0.1-SNAPSHOT.jar
